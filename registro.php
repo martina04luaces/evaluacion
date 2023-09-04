@@ -22,8 +22,9 @@
     <?php
         //registro 
         if(isset($_POST['registrar'])){
-            $nombre= $_POST('nombre');
-            $pass= $_POST('pass');
+            $nombre= $_POST['nombre'];
+            $pass= $_POST['pass'];
+            $pass = password_hash($pass, PASSWORD_DEFAULT);
             if(is_uploaded_file($_FILES['imagen']['tmp_name'])){
                 move_uploaded_file($_FILES['imagen']['tmp_name'], $_FILES['imagen']['name']);
                 $imagen=$_FILES['imagen']['name'];
