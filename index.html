@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Registro de Ususarios</h1>
+            <div class="container">
+                <form action="conexion.php" method="POST">
+                    <section class="formu">
+                        <div class="id">
+                            <label for="id">id</label> 
+                            <input type="text" name="id" required> 
+                        </div>
+                        <div class="name">
+                            <label for="nombre">nombre</label> 
+                            <input type="text" name="nombre" required> 
+                        </div>
+                        <div class="contrasenia">
+                            <label for="pass">contraseñia</label> 
+                            <input type="text" name="pass" required> 
+                        </div>
+                        <div class="img">
+                            <label for="imagen_usuario">imagen del usuario</label> 
+                            <input type="file" name="foto" accept="image/*">
+                              
+                        </div>
+                </form> 
+            </div>
+    </body>
+</html>
