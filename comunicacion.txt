@@ -1,0 +1,3 @@
+emy olivera= base de datos 
+lucas fernandez= back 
+martina luaces = front
